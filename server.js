@@ -1,7 +1,7 @@
-const express = require('express');
-const app = express();
-const puerto = 3000;
+const app = require('./app/app')
+const config = require('./app/config/configuracion')
 
-app.listen(puerto, ()=>{
-    console.log(`Aplicación corriendo en el puerto ${puerto}`);
+
+app.listen(config.PORT, ()=>{
+    console.log(`Aplicación corriendo en el puerto ${config.PORT}`);
 })
